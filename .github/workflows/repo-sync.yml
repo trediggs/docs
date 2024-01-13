@@ -63,9 +63,7 @@ jobs:
                 await closePullRequest(pull.number)
               }
               console.log('Closed existing pull requests')
-            }
-
-            try {
+              try {
               const { data } = await github.rest.repos.compareCommits({
                 owner,
                 repo,
